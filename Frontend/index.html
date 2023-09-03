@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Management Website</title>
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Task Management System</h1>
+    <!-- User authentication/login section -->
+    <div class="user-auth">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Task CRUD section -->
+    <div class="task-crud">
+      <h2>Create Task</h2>
+      <form id="taskForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="date">Due Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+
+        <label for="assignedUser">Assigned User:</label>
+        <select id="assignedUser" name="assignedUser" required>
+          <option value="user1">User 1</option>
+          <option value="user2">User 2</option>
+          <!-- Add more options for other users dynamically -->
+        </select>
+
+        <input type="submit" value="Add Task">
+      </form>
+    </div>
+
+    <!-- Admin Dashboard section -->
+    <div class="admin-dashboard">
+      <h2>Admin Dashboard</h2>
+      <div id="dashboardContainer">
+        <!-- Task list and filtering/sorting/searching options -->
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

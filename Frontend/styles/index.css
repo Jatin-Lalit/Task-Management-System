@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.user-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.user-auth input[type="text"],
+.user-auth input[type="password"] {
+  padding: 5px;
+}
+
+.user-auth button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.task-crud {
+  margin-bottom: 20px;
+}
+
+.task-crud h2 {
+  margin-top: 0;
+}
+
+.task-crud form {
+  display: grid;
+  gap: 10px;
+}
+
+.task-crud label {
+  font-weight: bold;
+}
+
+.task-crud input[type="text"],
+.task-crud textarea,
+.task-crud input[type="date"],
+.task-crud select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc
+
+}
+
+.task-crud input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-dashboard h2 {
+  margin-top: 0;
+}
+
+.admin-dashboard #dashboardContainer {
+  /* Styling for the dashboard container */
+}
+
+/* Add responsive styles for different screen sizes */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+}
+
+/* Add more responsive styles as needed */
+
